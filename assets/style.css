@@ -14,3 +14,9 @@
 .hero-wallpaper{height:310px;margin:32px 0 0;border-radius:14px;background:#23473f url('/assets/hero-wallpaper.jpg') center 52%/cover no-repeat;box-shadow:0 10px 35px rgba(24,44,51,.09)}
 @media(max-width:600px){.hero-wallpaper{height:205px;margin:20px 0 0;border-radius:10px;background-position:52% center}}
 @media(prefers-reduced-motion:no-preference){.hero-wallpaper{transition:filter .2s ease}.hero-wallpaper:hover{filter:saturate(1.08)}}
+
+/* Shared Psalm artwork on Chinese and English home pages. */
+.psalm-wallpaper{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;overflow:hidden;height:540px;margin:30px 0 0;border-radius:14px;background:#c6c6b5;box-shadow:0 10px 35px rgba(24,44,51,.08)}
+.psalm-wallpaper::before{content:"";position:absolute;inset:-24px;z-index:-1;background:url('/assets/psalm-hero.jpg') center/cover no-repeat;filter:blur(22px);opacity:.52}
+.psalm-wallpaper img{display:block;width:auto;height:100%;max-width:100%;object-fit:contain;box-shadow:0 0 18px rgba(16,22,20,.12)}
+@media(max-width:600px){.psalm-wallpaper{height:min(126vw,560px);margin:20px 0 0;border-radius:10px}.psalm-wallpaper::before{filter:blur(16px)}}
