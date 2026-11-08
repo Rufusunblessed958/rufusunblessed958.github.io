@@ -17,3 +17,12 @@ exclude:
   - scripts
   - README.md
   - Gemfile.lock
+
+# Default category for migrated algorithm and training posts.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      categories:
+        - 竞赛题解
