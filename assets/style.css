@@ -20,3 +20,16 @@
 .psalm-wallpaper::before{content:"";position:absolute;inset:-24px;z-index:-1;background:url('/assets/psalm-hero.jpg') center/cover no-repeat;filter:blur(22px);opacity:.52}
 .psalm-wallpaper img{display:block;width:auto;height:100%;max-width:100%;object-fit:contain;box-shadow:0 0 18px rgba(16,22,20,.12)}
 @media(max-width:600px){.psalm-wallpaper{height:min(126vw,560px);margin:20px 0 0;border-radius:10px}.psalm-wallpaper::before{filter:blur(16px)}}
+
+/* Full-page Psalm wallpaper, shared by Chinese and English pages. */
+body{background:#cbd3cb}
+body::before{content:"";position:fixed;inset:-36px;z-index:0;pointer-events:none;background:linear-gradient(rgba(235,238,227,.30),rgba(235,238,227,.40)),url('/assets/psalm-wallpaper-clean.jpg') center center/cover no-repeat;filter:blur(12px);transform:scale(1.03)}
+body>.masthead,body>main,body>.footer{position:relative;z-index:1}
+.masthead{background:rgba(255,255,255,.78);backdrop-filter:blur(10px)}
+.psalm-wallpaper{height:640px;margin:30px 0 24px;border-radius:13px;background:rgba(225,231,222,.18);box-shadow:0 12px 44px rgba(20,39,35,.17)}
+.psalm-wallpaper::before{background:url('/assets/psalm-wallpaper-clean.jpg') center/cover no-repeat;opacity:.45;filter:blur(25px)}
+.psalm-wallpaper img{box-shadow:0 12px 35px rgba(22,34,30,.15)}
+.archive{background:rgba(255,255,255,.85);backdrop-filter:blur(13px);border:1px solid rgba(255,255,255,.60);border-radius:14px;padding:28px 28px 44px;margin-bottom:32px;box-shadow:0 12px 35px rgba(28,45,38,.08)}
+.article{background:rgba(255,255,255,.91);backdrop-filter:blur(13px);border-radius:14px;padding:46px 36px 60px;margin:30px 0 36px;box-shadow:0 12px 35px rgba(28,45,38,.08)}
+.footer{background:rgba(255,255,255,.78);backdrop-filter:blur(9px);border-top:0;border-radius:12px;margin-bottom:24px;padding:20px 28px}
+@media(max-width:600px){.psalm-wallpaper{height:min(125vw,620px);margin:16px 0 18px}.archive{padding:18px 15px 28px}.article{padding:30px 18px 40px;margin:16px 0}.footer{padding:16px}}
